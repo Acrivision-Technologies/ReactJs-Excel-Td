@@ -9,11 +9,13 @@ on:
       - main
   workflow_dispatch:
 
+env:
+  CI: false
+  
 jobs:
   build:
     runs-on: ubuntu-latest
-    env: 
-      CI: false
+    
 
     steps:
       - uses: actions/checkout@v2
